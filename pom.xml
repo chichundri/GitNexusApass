@@ -43,6 +43,17 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+			      <groupId>org.sonatype.plugins</groupId>
+			      <artifactId>nexus-staging-maven-plugin</artifactId>
+			      <version>1.6.7</version>
+			      <extensions>true</extensions>
+			      <configuration>
+				<serverId>snapshots</serverId>
+				<nexusUrl>http://localhost:8081/</nexusUrl>
+				<autoReleaseAfterClose>true</autoReleaseAfterClose>
+			      </configuration>
+			   </plugin>
 		</plugins>
 	</build>
 	<distributionManagement>
@@ -56,6 +67,7 @@
 	    <!-- CHANGE HERE by your team nexus server -->
 	    <url>http://localhost:8081/repository/Demo-SNAP/</url>
 	  </snapshotRepository>
+	  
 	</distributionManagement>
 
 

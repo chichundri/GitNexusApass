@@ -67,6 +67,10 @@
 	    <!-- CHANGE HERE by your team nexus server -->
 	    <url>http://localhost:8081/repository/Demo-SNAP/</url>
 	  </snapshotRepository>
+	<repository>
+	    <id>snapshots</id>
+	    <url>http://localhost:8081/repository/Demo-SNAP/</url>
+	  </repository>
 	  
 	</distributionManagement>
 
